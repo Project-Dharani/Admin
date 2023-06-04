@@ -3,12 +3,12 @@ import creds from "./creds.js";
 
 const app = express();
 
-// const db = mysql.createConnection({
-//   host: creds.serverUrl,
-//   user: creds.userName,
-//   password: creds.password,
-//   database: "test",
-// });
+const db = mysql.createConnection({
+  host: creds.serverUrl,
+  user: creds.userName,
+  password: creds.password,
+  database: "test",
+});
 
 app.listen(8800, () => {
   console.log(creds.userName);
