@@ -49,12 +49,9 @@ export default function Admin() {
   const handleUpdateStudent = () => {
     if (editStudent.id && editStudent.name && editStudent.email) {
       setStudents(
-        students.map((student) => {
-          if (student.id === editStudent.id) {
-            return editStudent;
-          }
-          return student;
-        })
+        students.map((student) =>
+          student.id === editStudent.id ? editStudent : student
+        )
       );
       setEditMode(false);
       setEditStudent({ id: "", name: "", email: "" });
@@ -71,7 +68,7 @@ export default function Admin() {
       <Box sx={{ display: "flex" }}>
         <Sidenav />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-          <h1>Home</h1>
+          <h1>Admin</h1>
           <Box sx={{ width: "100%" }}>
             <Tabs value={activeTab} onChange={handleTabChange}>
               <Tab label="Student Management" />
