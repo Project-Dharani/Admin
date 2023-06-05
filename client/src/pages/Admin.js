@@ -133,13 +133,16 @@ export default function Admin() {
                       }}
                     >
                       <TextField
+                        size="small"
                         label="ID"
+                        autoFocus
                         value={newStudent.id}
                         onChange={(e) =>
                           setNewStudent({ ...newStudent, id: e.target.value })
                         }
                       />
                       <TextField
+                        size="small"
                         label="Name"
                         value={newStudent.name}
                         onChange={(e) =>
@@ -147,6 +150,7 @@ export default function Admin() {
                         }
                       />
                       <TextField
+                        size="small"
                         label="Email"
                         value={newStudent.email}
                         onChange={(e) =>
@@ -156,7 +160,9 @@ export default function Admin() {
                           })
                         }
                       />
-                      <Button onClick={handleAddStudent}>Add</Button>
+                      <Button size="small" onClick={handleAddStudent}>
+                        Search
+                      </Button>
                     </Box>
                   )}
                 </>
