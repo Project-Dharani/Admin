@@ -167,6 +167,7 @@ export default function Admin() {
                   <TableContainer>
                     <Table>
                       <TableHead>
+                        <h2>Student Details</h2>
                         <TableRow>
                           <TableCell>ID</TableCell>
                           <TableCell>Name</TableCell>
