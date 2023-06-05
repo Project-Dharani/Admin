@@ -165,6 +165,39 @@ export default function Admin() {
                       </Button>
                     </Box>
                   )}
+                  <TableContainer>
+                    <Table>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>ID</TableCell>
+                          <TableCell>Name</TableCell>
+                          <TableCell>Email</TableCell>
+                          <TableCell>Action</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {students.map((student) => (
+                          <TableRow key={student.id}>
+                            <TableCell>{student.id}</TableCell>
+                            <TableCell>{student.name}</TableCell>
+                            <TableCell>{student.email}</TableCell>
+                            <TableCell>
+                              <IconButton
+                                onClick={() => handleEditStudent(student)}
+                              >
+                                Edit
+                              </IconButton>
+                              <IconButton
+                                onClick={() => handleDeleteStudent(student.id)}
+                              >
+                                Delete
+                              </IconButton>
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
                 </>
               )}
               {activeTab === 1 && <p>Content for Facility Management</p>}
