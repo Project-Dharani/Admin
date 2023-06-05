@@ -74,7 +74,6 @@ export default function Admin() {
               <Tab label="Student Management" />
               <Tab label="Facility Management" />
               <Tab label="Login Credentials" />
-              <Tab label="Student Details" />
             </Tabs>
             <Box
               sx={{
