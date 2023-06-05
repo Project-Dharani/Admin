@@ -1,0 +1,28 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "http://connected-python.ckw96vgxltbv.us-east-1.rds.amazonaws.com",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "Project-D",
+      "username": "admin",
+      "database": "loginpage"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "connected-python.ckw96vgxltbv.us-east-1.rds.amazonaws.com",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "Project-d",
+      "database": "loginpage",
+      "username": "admin"
+    }
+  ]
+}
