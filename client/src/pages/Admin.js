@@ -161,7 +161,7 @@ export default function Admin() {
                         }
                       />
                       <Button size="small" onClick={handleAddStudent}>
-                        Search
+                        Add
                       </Button>
                     </Box>
                   )}
