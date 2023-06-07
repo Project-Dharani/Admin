@@ -7,16 +7,14 @@ import Student from "./pages/Student";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" exact element={<Home />}></Route>
-          <Route path="/Admin" exact element={<Admin />}></Route>
-          <Route path="/Faculty" exact element={<Faculty />}></Route>
-          <Route path="/Student" exact element={<Student />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/Admin" exact element={<Admin />}></Route>
+        <Route path="/Faculty" exact element={<Faculty />}></Route>
+        <Route path="/Student" exact element={<Student />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
